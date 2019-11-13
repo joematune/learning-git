@@ -7,7 +7,7 @@ body {
     color: #121212;
     border: 6px solid cornflowerblue;
 }
-#business-card {
+main {
     display: grid;
     place-content: center;
     text-align: center;

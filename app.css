@@ -4,8 +4,10 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
-    color: #121212;
-    border: 6px solid cornflowerblue;
+    background-color: hsl(0, 0%, 99%);
+    color: #121230;
+    border: 6px solid #efefef;
+    overflow: hidden;
 }
 main {
     display: grid;
@@ -17,4 +19,13 @@ main {
 }
 h1 {
     margin: 0 0 0.5rem 0;
+}
+svg {
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+line {
+    stroke: salmon;
+    stroke-width: 2px;
 }

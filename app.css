@@ -1,7 +1,23 @@
 body {
+    margin: 0;
+    box-sizing: border-box;
     display: grid;
     place-content: center;
-    align-items: center;
     height: 100vh;
     color: #121212;
+    border: 6px solid cornflowerblue;
+}
+#business-card {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: 13rem;
+    width: 25rem;
+    border: 1px solid #969696;
+}
+h1 {
+    margin: 0.5rem;
+}
+p {
+    margin: 7px;
 }

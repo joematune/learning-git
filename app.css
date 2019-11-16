@@ -25,7 +25,8 @@ svg {
     position: absolute;
     z-index: -1;
 }
-line {
+polyline {
+    fill: none;
     stroke: salmon;
     stroke-width: 2px;
 }

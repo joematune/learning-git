@@ -9,6 +9,10 @@ body {
     border: 6px solid #efefef;
     overflow: hidden;
 }
+body *::selection {
+    /* background: rgba(0, 10, 240, 0.05); */
+    background: none;
+}
 main {
     display: grid;
     place-content: center;
@@ -16,6 +20,7 @@ main {
     height: 13rem;
     width: 25rem;
     border: 1px solid #969696;
+    cursor: pointer;
 }
 h1 {
     margin: 0 0 0.5rem 0;
@@ -25,8 +30,11 @@ svg {
     position: absolute;
     z-index: -1;
 }
+h1,em,svg {
+    pointer-events: none;
+}
 polyline {
     fill: none;
-    stroke: salmon;
-    stroke-width: 2px;
+    stroke: #efefef;
+    stroke-width: 3px;
 }

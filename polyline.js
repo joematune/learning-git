@@ -5,9 +5,9 @@ export default class Polyline {
         this.id = id;
     }
     makePoint(minX, width, minY, height) {
-        let y = minY + Math.floor(Math.random() * height -5);
-        let x = minX + Math.floor(Math.random() * width -5);
-        return `${x},${y} `
+        let y = minY + Math.floor(Math.random() * (height));
+        let x = minX + Math.floor(Math.random() * (width));
+        return `${x},${y} `;
     }
     makePointLoop(num, minX, width, minY, height) {
         // Der anfang ist die ende und der ende ist der anfang.

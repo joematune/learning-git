@@ -1,26 +1,36 @@
 body {
-    margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: grid;
-    place-content: center;
-    height: 100vh;
+    justify-content: center;
+    align-content: space-evenly;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    width: calc(var(--vw, 1vw) * 100);
+    margin: 0 auto;
     background-color: hsl(0, 0%, 99%);
+    /* background-color: #76c4ae; */
     color: #121230;
-    border: 6px solid #efefef;
     overflow: hidden;
 }
 body *::selection {
     /* background: rgba(0, 10, 240, 0.05); */
     background: none;
 }
-main {
+.card {
     display: grid;
     place-content: center;
-    text-align: center;
-    height: 13rem;
-    width: 25rem;
-    border: 1px solid #969696;
+    text-align: center; 
+    height: 40vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    width: calc(var(--vh, 1vh) * 40);
+    max-height: 13rem;
+    width: 90vw; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    width: calc(var(--vw, 1vw) * 90);
+    max-width: 24rem;
+    border: 3px solid #efefef;
     cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0px 0px;
+    color: #efefef;
 }
 h1 {
     margin: 0 0 0.5rem 0;
